@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
 import CommentDetail from "./CommentDetail";
+import ApprovalCard from "./AppruvalCard";
 
 const App = () => {
 
     return(
         <div className="ui container comments">
+            <ApprovalCard />
            <CommentDetail autor="Sam"
                           avatarImage={faker.image.avatar()}
                           timeAgo="Today at 04:00 PM"
